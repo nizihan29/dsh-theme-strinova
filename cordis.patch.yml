@@ -1,0 +1,27 @@
+# 本 bundle 向选中它的 profile 贡献的层。
+#
+# 一行 = 一个包名。该行启用时，客户端模块系统会挂载这个包的浏览器半（./client），
+# 由它通过 @deepseek-ai/dsh-client-ui-theme 提供的 `theme` 服务注册主题。
+#
+# ── 这里没有 `modifies`，而且绝不能加 ────────────────────────────────────────
+#
+# 本行曾经声明 `modifies: [ui-theme]`（"我要修改拥有 theme 服务的那个行"）。
+# 那是循环依赖，会把整个应用挂死：
+#
+# 浏览器半已经在 `exports.inject` 里声明了 `theme`，这才是真正决定启动顺序的东西——
+# 提供方交出服务后，消费方才会挂载。再加上 `modifies`，等于同时告诉加载器相反的事：
+# 本行必须先于 ui-theme 启动。于是 ui-theme 等我们、我们等 ui-theme，两个 fiber
+# 永远 pending，桌面版停在 "Loading plugins..."，没有异常也没有崩溃日志。
+#
+# 通过 `inject` 消费服务已经足够且正确。永远不要为"消费其服务的行"声明 `modifies`。
+#
+# ── 开关 ─────────────────────────────────────────────────────────────────────
+#
+# 想临时关掉皮肤效果（保留插件、只停用样式注入）时，把下面的 config.enabled
+# 改成 false 即可；要彻底移除，从 profile 的 dependencies 里卸载本包。
+
+- insert:
+    - id: calabiyau
+      name: dsh-theme-calabiyau
+      config:
+        enabled: true

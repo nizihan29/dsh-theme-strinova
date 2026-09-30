@@ -1,0 +1,52 @@
+{
+  "name": "dsh-theme-calabiyau",
+  "version": "0.1.0",
+  "description": "卡拉彼丘（Calabiyau / Strinova）深色科幻主题 —— 橙红 #ff6b2f × 深灰战场配色，含氛围层与自定义素材位",
+  "author": "nizihan29",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nizihan29/dsh-theme-calabiyau.git"
+  },
+  "homepage": "https://github.com/nizihan29/dsh-theme-calabiyau#readme",
+  "bugs": {
+    "url": "https://github.com/nizihan29/dsh-theme-calabiyau/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "theme",
+    "skin",
+    "calabiyau",
+    "strinova"
+  ],
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-theme"
+      ]
+    }
+  }
+}
