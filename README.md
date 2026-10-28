@@ -1,4 +1,4 @@
-# dsh-theme-calabiyau · 卡拉彼丘主题
+# dsh-theme-strinova · 卡拉彼丘主题
 
 给 **DeepSeek Harness (DSH)** 的一套深色科幻皮肤 —— 橙红 `#ff6b2f` × 战场深灰 `#222222`，
 附一层纯 CSS 的网格氛围光，以及三个**自定义素材位**（背景 / 水印 / 立绘）。
@@ -26,23 +26,23 @@
 ```sh
 # 在你的 dsh profile 目录下
 cd ~/.dsh/profiles/web
-pnpm add dsh-theme-calabiyau
+pnpm add dsh-theme-strinova
 ```
 
 ### 2. tarball
 
 ```sh
 # 在本仓库
-pnpm pack            # 产出 dsh-theme-calabiyau-0.1.0.tgz
+pnpm pack            # 产出 dsh-theme-strinova-0.1.0.tgz
 # 然后在 profile 目录
-pnpm add /path/to/dsh-theme-calabiyau-0.1.0.tgz
+pnpm add /path/to/dsh-theme-strinova-0.1.0.tgz
 ```
 
 ### 3. git 源码
 
 ```sh
 cd ~/.dsh/profiles/web
-pnpm add github:nizihan29/dsh-theme-calabiyau
+pnpm add github:nizihan29/dsh-theme-strinova
 ```
 
 > 因为本包**没有构建步骤**，git 安装不会触发 `prepare`，也就不用额外授权。
@@ -104,7 +104,7 @@ const ASSETS = {
 ## 项目结构
 
 ```
-dsh-theme-calabiyau/
+dsh-theme-strinova/
 ├── package.json          # dsh.bundle.patch + dsh.client 声明
 ├── cordis.patch.yml      # 插件注册行（一行一个包名）
 ├── lib/

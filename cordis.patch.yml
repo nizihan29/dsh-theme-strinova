@@ -21,7 +21,7 @@
 # 改成 false 即可；要彻底移除，从 profile 的 dependencies 里卸载本包。
 
 - insert:
-    - id: calabiyau
-      name: dsh-theme-calabiyau
+    - id: strinova
+      name: dsh-theme-strinova
       config:
         enabled: true

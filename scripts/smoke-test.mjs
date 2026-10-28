@@ -72,8 +72,8 @@ if (overrideTokens) {
   }
 }
 console.log(bad === 0 ? '  ✔ 全部 token 均为 {light,dark} 字符串对' : `  ✘ ${bad} 个 token 形状错误`)
-console.log('  source 正确 =', overrideSource === 'calabiyau')
+console.log('  source 正确 =', overrideSource === 'strinova')
 
-const pass = captured && mod && typeof mod.apply === 'function' && overrideSource === 'calabiyau' && names.length >= 60 && bad === 0
+const pass = captured && mod && typeof mod.apply === 'function' && overrideSource === 'strinova' && names.length >= 60 && bad === 0
 console.log('\n' + (pass ? '✅ 冒烟测试通过' : '❌ 冒烟测试失败'))
 process.exit(pass ? 0 : 1)
