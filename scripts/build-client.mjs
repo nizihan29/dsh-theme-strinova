@@ -6,7 +6,7 @@ const map = {
   '@@WP_DARK@@':       b64('assets/embed/wp-dark.jpg', 'data:image/jpeg;base64'),
   '@@STICKER_LIGHT@@': b64('assets/embed/sticker-light.png', 'data:image/png;base64'),
   '@@STICKER_DARK@@':  b64('assets/embed/sticker-dark.png', 'data:image/png;base64'),
-  '@@XC5@@': b64('assets/embed/xc-5.png', 'data:image/png;base64'),
+  '@@XC_ROW@@': b64('assets/embed/xc-row.png', 'data:image/png;base64'),
 }
 let out = tpl
 for (const [k, v] of Object.entries(map)) {
