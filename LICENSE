@@ -19,13 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----
-
-NOTE ON THIRD-PARTY ASSETS / 第三方素材说明
-
-This project ships NO third-party game assets. All colors are derived from
-publicly visible values on the Calabiyau official website.
-
-本仓库不包含任何第三方游戏素材。配色取自卡拉彼丘官方网站公开可见的颜色值。
-用户在 ASSETS 配置区自行添加的图片，其版权与使用许可由该用户自行负责。

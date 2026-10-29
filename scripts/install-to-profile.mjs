@@ -6,7 +6,7 @@ import path from 'node:path'
 import { execFileSync } from 'node:child_process'
 
 const PROFILE = '/Users/kumada-lab/Library/Application Support/dsh-desktop/harness/profiles/web'
-const WORKSPACE = '/Users/kumada-lab/Workspace/dsh-theme-calabiyau'
+const WORKSPACE = '/Users/kumada-lab/Workspace/dsh-theme-strinova'
 const PKG = path.join(PROFILE, 'package.json')
 const PNPM = '/Users/kumada-lab/Library/Application Support/dsh-desktop/harness/.desktop-bin/pnpm'
 
@@ -27,12 +27,12 @@ console.log('改动前 dependencies:', JSON.stringify(pkg.dependencies))
 console.log('改动前 bundles:', JSON.stringify(pkg.dsh?.profile?.bundles))
 
 const link = `link:${WORKSPACE}`
-if (pkg.dependencies['dsh-theme-calabiyau'] !== link) {
-  pkg.dependencies['dsh-theme-calabiyau'] = link
+if (pkg.dependencies['dsh-theme-strinova'] !== link) {
+  pkg.dependencies['dsh-theme-strinova'] = link
 }
 const bundles = pkg.dsh.profile.bundles ?? []
-if (!bundles.includes('dsh-theme-calabiyau')) {
-  bundles.push('dsh-theme-calabiyau')
+if (!bundles.includes('dsh-theme-strinova')) {
+  bundles.push('dsh-theme-strinova')
   pkg.dsh.profile.bundles = bundles
 }
 
@@ -43,11 +43,11 @@ console.log('改动后 bundles:', JSON.stringify(pkg.dsh?.profile?.bundles))
 console.log('\n>>> 运行 pnpm install ...')
 execFileSync(PNPM, ['install'], { cwd: PROFILE, stdio: 'inherit' })
 
-const linkPath = path.join(PROFILE, 'node_modules', 'dsh-theme-calabiyau')
+const linkPath = path.join(PROFILE, 'node_modules', 'dsh-theme-strinova')
 console.log('\n>>> 验证 node_modules 链接:')
 if (fs.existsSync(linkPath)) {
   const real = fs.realpathSync(linkPath)
-  console.log('  node_modules/dsh-theme-calabiyau ->', real)
+  console.log('  node_modules/dsh-theme-strinova ->', real)
   const ok = real === WORKSPACE
   console.log(ok ? '  ✔ 链接指向工作区，正确' : '  ✘ 链接指向异常:', real)
   process.exit(ok ? 0 : 1)

@@ -1,7 +1,7 @@
 {
   "name": "dsh-theme-strinova",
   "version": "0.1.0",
-  "description": "卡拉彼丘（Calabiyau / Strinova）深色科幻主题 —— 橙红 #ff6b2f × 深灰战场配色，含氛围层与自定义素材位",
+  "description": "卡拉彼丘（Calabiyau / Strinova）双模式主题（浅色/深色）—— 暖琥珀金配色，含角色卡轮换、漂浮粒子与自定义素材",
   "author": "nizihan29",
   "license": "MIT",
   "repository": {
@@ -18,7 +18,6 @@
     "deepseek-harness",
     "theme",
     "skin",
-    "strinova",
     "strinova"
   ],
   "type": "module",
