@@ -1,5 +1,7 @@
 # dsh-theme-strinova · 卡拉彼丘主题
 
+![预览](assets/screenshot.png)
+
 给 DeepSeek Harness（DSH）的一套卡拉彼丘主题，**浅色 / 深色两套**、角色卡随机轮换（占位符台词 + 右下角q版）、漂浮粒子、新会话页大立绘、侧边栏自定义logo。
 
 ## 安装

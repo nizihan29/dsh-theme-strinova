@@ -31,7 +31,8 @@
     "lib",
     "cordis.patch.yml",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "assets/screenshot.png"
   ],
   "dsh": {
     "bundle": {
