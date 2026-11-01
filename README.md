@@ -2,7 +2,8 @@
 
 ![预览](assets/screenshot.png)
 
-给 DeepSeek Harness（DSH）的一套卡拉彼丘主题，**浅色 / 深色两套**、角色卡随机轮换（占位符台词 + 右下角q版）、漂浮粒子、新会话页大立绘、侧边栏自定义logo。
+**喵拉喵丘喵了喵！**  
+给 DeepSeek Harness 做的一套卡拉彼丘主题喵，包含：浅色 / 深色两套、角色卡随机轮换（台词 + 右下角q版表情包）、漂浮粒子、侧边栏自定义logo。
 
 ## 安装
 
@@ -19,7 +20,7 @@ pnpm add github:nizihan29/dsh-theme-strinova       # GitHub 源码
 
 ## 版权声明
 
-本主题内置图片素材均来源于 [卡拉彼丘 Wiki](https://wiki.biligame.com/klbq/)，版权归卡拉彼丘官方所有。如有侵权，请联系删除。
+本主题内置图片素材均来源于 [卡拉彼丘 Wiki](https://wiki.biligame.com/klbq/) 喵，版权归卡拉彼丘官方所有喵。如有侵权，请联系删除。
 
 ## License
 
