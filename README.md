@@ -7,16 +7,19 @@
 
 ## 安装
 
-**推荐通过插件市场安装**：设置 → 插件 → 插件市场，搜索 `dsh-theme-strinova` 一键安装。
+### 方式一：直接安装（推荐）
 
-命令行安装：
+1. 打开 DSH → **插件**
+2. 点 **添加插件**
+3. **安装源** 选 **npm 官方源**
+4. 输入 `dsh-theme-strinova`，点安装
 
-```sh
-pnpm add dsh-theme-strinova                        # npm
-pnpm add github:nizihan29/dsh-theme-strinova       # GitHub 源码
-```
+### 方式二：插件市场
 
-装完后在 **设置 → 插件** 里启用即可，配色会自动叠加，无需手动选择主题。
+1. 打开 **插件市场**
+2. 搜索 `dsh-theme-strinova`
+3. 点安装
+
 
 ## 版权声明
 
